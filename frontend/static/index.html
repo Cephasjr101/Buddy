@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AgentHub - Your AI Agents</title>
+<meta name="description" content="Create named AI agents that take voice notes, make calls, book appointments, send emails and market your business daily.">
+<link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#/"><img src="/static/favicon.svg" width="28" height="28" alt="">
+    <span>AgentHub</span></a>
+  <nav class="mainnav" id="mainnav">
+    <a href="#/agents">My Agents</a>
+    <a href="#/tasks" data-auth>Records</a>
+    <a href="#/posts" data-auth>Marketing</a>
+    <a href="#/skills" data-auth>Skills</a>
+    <a href="#/leads" data-auth>Leads</a>
+  </nav>
+  <div class="topbar-right">
+    <button class="btn btn-ghost" id="auth-btn">Sign in</button>
+  </div>
+</header>
+<main id="app" class="app"></main>
+<footer class="footer">
+  <div class="footer-grid">
+    <div><strong>AgentHub</strong><p class="small">Named AI agents for personal and business life. Voice skills powered by open-source VoiceStudio.</p></div>
+    <div><h5>Product</h5><a href="#/agents">Agents</a><a href="#/skills">Voice skills</a><a href="#/posts">Marketing</a></div>
+    <div><h5>Legal</h5><a href="#/terms">Terms &amp; Conditions</a><a href="#/privacy">Privacy Policy</a><a href="#/acceptable-use">Acceptable Use Policy</a><a href="#/ai-policy">AI Voice &amp; Data Policy</a><a href="#/cookies">Cookie Policy</a><a href="#/billing">Billing &amp; Refunds</a></div>
+    <div><h5>Account</h5><a href="#/account">Settings</a><a href="#/account">Delete account</a></div>
+  </div>
+  <div class="footer-base">© 2026 AgentHub. Voice by VoiceStudio (AGPL).</div>
+</footer>
+<div class="toast-root" id="toast-root"></div>
+<div id="cookie-banner" hidden style="position:fixed;bottom:0;left:0;right:0;z-index:80;
+background:#0b1526;border-top:1px solid #334155;padding:.9rem 1.2rem;display:flex;
+gap:1rem;align-items:center;justify-content:center;flex-wrap:wrap">
+  <span style="font-size:.88rem;color:#94a3b8;max-width:640px">We use one strictly-necessary
+  cookie to keep you signed in, and remember your choice here.
+  <a href="#/cookies" style="color:#5eead4">Cookie Policy</a></span>
+  <span style="display:flex;gap:.5rem">
+    <button class="btn" style="padding:.4rem 1rem;font-size:.85rem" id="cb-accept">Accept</button>
+    <button class="btn btn-ghost" style="padding:.4rem 1rem;font-size:.85rem" id="cb-decline">Decline</button>
+  </span>
+</div>
+<script src="/static/app.js" defer></script>
+</body>
+</html>
